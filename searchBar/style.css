@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url("../pcoders-min-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: 350px;
+
+  background-color: rgb(240, 241, 245);
+}
+#searchBox {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 50px;
+  transition: 0.5s ease-out;
+  border-top: 0;
+  border: 1px solid #007d8a;
+  backdrop-filter: blur(10px);
+  top: 50px;
+}
+#searchBar {
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+}
+#inputBox {
+  width: calc(100% - 50px);
+  height: 100%;
+  background-color: #c1e4e9; /* Light Blue */
+  color: #007d8a; /* Teal */
+  border: 0;
+  transition: 0.2s ease;
+  padding-inline: 10px;
+  font-size: 20px;
+}
+#inputBox:focus {
+  outline: none;
+  border-radius: 0;
+}
+#inputBox::selection {
+  background-color: #bcbcff;
+  color: aliceblue;
+}
+#submit {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: #007d8a;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #c1e4e9;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+#suggestions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.sg {
+  height: 34px;
+  border: 0;
+  font-size: 15px;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0);
+  margin-inline: 10px;
+  display: flex;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.sg:hover {
+  font-size: 20px;
+}
