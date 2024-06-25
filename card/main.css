@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15,15,15);
+}
+#main{
+    width: 390px;
+    height: 320px;
+    /* border: 0.5px solid rgba(0, 0, 0, 0.137); */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#image{
+    height: 220px;
+    width: 100%;
+    background: url(https://i.ytimg.com/vi/Fs4GiLRm25A/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB0gaAAuADigIMCAAQARhlIFsoQDAP&rs=AOn4CLCy8IbOk5AhpoR-zBmYKCk6XNUliw);
+    background-size: cover;
+    border-radius: 15px;
+}
+#descriptions{
+    height: 100px;
+    /* background: red; */
+    width: 100%;
+    display: flex;
+}
+#left{
+    width: 48px;
+    height: 100%;
+    padding: 12px 12px 0 0;
+}
+#left > img{
+    width: 36px;
+    height: 36px;
+    background-color: rgb(240, 242, 245);
+    border-radius: 50px;
+}
+#middle{
+    width: 318px;
+    height: 100%;
+    padding-top: 12px;
+}
+#right{
+    width: 24px;
+    height: 100%;
+    padding: 12px 3px 0 0;
+}
+#title{
+    width: 100%;
+    height: 44px;
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+#right > button{
+    color: white;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    font-size: 100%;
+}
+#info{
+    width: 100%;
+    height: 40px;
+}
+#channelName{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+#name{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    color: rgb(170,170,170);
+    margin-right: 3px;
+}
+#verified{
+    width: 14px;
+    height: 14px;
+    fill: rgb(170,170,170);
+}
+#videoStat{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 14px;
+    color: rgb(170,170,170);
+    margin-right: 3px;
+    display: flex;
+}
+#views{
+    margin-right: 3px;
+}
